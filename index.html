@@ -3,64 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>STEM Tết – Góc Điều Ước Số | 10A7</title>
+<title>STEM Tết – Chuyển đổi số | 10A7</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
 :root{
-  --red:#c80000;
-  --gold:#ffcc00;
+  --red:#b80000;
+  --gold:#ffcc33;
 }
 
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
+*{box-sizing:border-box;margin:0;padding:0}
 
 body{
   font-family:'Inter',sans-serif;
-  background:#fff6e5;
+  background:#fff8ea;
   color:#4a2c00;
-  overflow-x:hidden;
-}
-
-/* ===== ICON TẾT BAY ===== */
-.tet-icons{
-  position:fixed;
-  inset:0;
-  pointer-events:none;
-  z-index:999;
-}
-.tet-icon{
-  position:absolute;
-  font-size:22px;
-  opacity:.85;
-  animation:tetFloat 14s linear infinite;
-}
-.tet-icon:nth-child(1){left:10%;animation-delay:0s}
-.tet-icon:nth-child(2){left:30%;animation-delay:3s}
-.tet-icon:nth-child(3){left:55%;animation-delay:6s}
-.tet-icon:nth-child(4){left:75%;animation-delay:9s}
-.tet-icon:nth-child(5){left:90%;animation-delay:12s}
-
-@keyframes tetFloat{
-  0%{transform:translateY(110vh) rotate(0)}
-  50%{transform:translateY(50vh) rotate(10deg)}
-  100%{transform:translateY(-10vh) rotate(-10deg)}
-}
-
-@media(max-width:768px){
-  .tet-icon{font-size:18px;animation-duration:18s}
 }
 
 /* ===== HEADER ===== */
 header{
   min-height:100vh;
   background:
-    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.6)),
-    url("https://images.unsplash.com/photo-1549693578-d683be217e58?auto=format&fit=crop&w=1500&q=80");
+    linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1517260739337-6799d239ce83?auto=format&fit=crop&w=1600&q=80");
   background-size:cover;
   background-position:center;
   display:flex;
@@ -74,11 +40,12 @@ header h1{
   font-size:42px;
   color:#fff;
 }
+
 header p{
-  margin-top:15px;
+  margin-top:18px;
   font-size:18px;
-  color:#ffe8b0;
-  line-height:1.6;
+  color:#ffe9b3;
+  line-height:1.7;
 }
 
 @media(max-width:768px){
@@ -90,30 +57,43 @@ header p{
 section{
   padding:60px 20px;
 }
+
 .container{
-  max-width:900px;
+  max-width:1000px;
   margin:auto;
-  text-align:center;
 }
 
-/* ===== BUTTON TẾT ===== */
+h2{
+  text-align:center;
+  color:#b80000;
+  margin-bottom:25px;
+}
+
+/* ===== CARD ===== */
+.card{
+  background:#fff;
+  border-radius:18px;
+  padding:28px;
+  margin-bottom:30px;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.card p{
+  line-height:1.8;
+}
+
+/* ===== BUTTON ===== */
 .tet-btn{
   display:inline-block;
-  margin-top:30px;
-  padding:15px 32px;
+  margin-top:25px;
+  padding:14px 32px;
   background:linear-gradient(45deg,var(--red),var(--gold));
   color:#fff;
   font-weight:700;
   border-radius:40px;
   text-decoration:none;
-  box-shadow:0 0 18px rgba(255,204,0,.8);
-  animation:glow 2s infinite;
-}
-
-@keyframes glow{
-  0%{box-shadow:0 0 8px var(--gold)}
-  50%{box-shadow:0 0 24px #ffd700}
-  100%{box-shadow:0 0 8px var(--gold)}
+  box-shadow:0 0 16px rgba(255,200,50,.7);
+  transition:.3s;
 }
 
 .tet-btn:hover{
@@ -123,9 +103,9 @@ section{
 /* ===== FOOTER ===== */
 footer{
   background:#7a0000;
-  color:#ffe8b0;
+  color:#ffe9b3;
   text-align:center;
-  padding:25px 15px;
+  padding:26px 15px;
   font-size:14px;
 }
 </style>
@@ -133,43 +113,97 @@ footer{
 
 <body>
 
-<!-- ICON TẾT -->
-<div class="tet-icons">
-  <span class="tet-icon">🌼</span>
-  <span class="tet-icon">🧧</span>
-  <span class="tet-icon">🎆</span>
-  <span class="tet-icon">🌸</span>
-  <span class="tet-icon">✨</span>
-</div>
-
 <!-- HEADER -->
 <header>
   <div>
-    <h1>🌸 STEM TẾT – GÓC ĐIỀU ƯỚC SỐ 🌸</h1>
+    <h1>🌸 STEM TẾT – CHUYỂN ĐỔI SỐ 🌸</h1>
     <p>
-      Lớp <strong>10A7</strong> – Trường THPT Bình Gia<br>
-      Chuyển đổi số – Lan tỏa yêu thương – Gửi gắm ước mơ đầu năm
+      Bảng tin STEM & Góc trưng bày sản phẩm<br>
+      Lớp <strong>10A7</strong> – Trường THPT Bình Gia
     </p>
   </div>
 </header>
 
-<!-- GÓC ĐIỀU ƯỚC -->
-<section id="wish">
+<!-- 5.3 BẢNG TIN STEM -->
+<section>
   <div class="container">
-    <h2>✨ GÓC “ĐIỀU ƯỚC SỐ ĐẦU NĂM” ✨</h2>
-    <p style="margin-top:20px;line-height:1.8">
-      Mỗi dịp năm mới là thời khắc để chúng ta nhìn lại hành trình đã qua và gửi gắm
-      những hy vọng cho chặng đường phía trước.<br><br>
-      Thông qua <strong>Góc Điều Ước Số</strong>, học sinh lớp 10A7 có thể chia sẻ điều ước,
-      ước mơ và những lời chúc Tết ý nghĩa bằng hình thức chuyển đổi số,
-      góp phần lan tỏa năng lượng tích cực và tinh thần đoàn kết trong tập thể.
-    </p>
+    <h2>🔷 BẢNG TIN STEM – CHUYỂN ĐỔI SỐ</h2>
 
-    <a class="tet-btn"
-       href="https://forms.gle/QqVibsXuuZuHQhxh6"
-       target="_blank">
-       🎉 GỬI ĐIỀU ƯỚC CỦA BẠN 🎉
-    </a>
+    <!-- ỨNG DỤNG CÔNG NGHỆ -->
+    <div class="card">
+      <h3>📱 Ứng dụng công nghệ trong dịp Tết</h3>
+      <p>
+        Công nghệ số ngày càng đóng vai trò quan trọng trong đời sống,
+        đặc biệt là vào dịp Tết Nguyên Đán.
+        <br><br>
+        <strong>– Trong mua sắm:</strong> Các sàn thương mại điện tử, thanh toán không tiền mặt
+        giúp người dân mua sắm nhanh chóng, tiện lợi.
+        <br>
+        <strong>– Trong giao thông:</strong> Ứng dụng bản đồ số, chỉ đường thông minh
+        giúp hạn chế ùn tắc và đảm bảo an toàn.
+        <br>
+        <strong>– Trong giữ gìn văn hóa Tết:</strong> Công nghệ hỗ trợ lưu trữ hình ảnh,
+        video, lời chúc Tết và các phong tục truyền thống dưới dạng số hóa.
+      </p>
+    </div>
+
+    <!-- GÓC ĐIỀU ƯỚC SỐ -->
+    <div class="card">
+      <h3>✨ Góc “Điều Ước Số Đầu Năm”</h3>
+      <p>
+        Mỗi dịp năm mới là thời khắc để nhìn lại hành trình đã qua và
+        gửi gắm những hy vọng cho chặng đường phía trước.
+        <br><br>
+        Thông qua <strong>Góc Điều Ước Số</strong>, học sinh lớp 10A7 có thể
+        chia sẻ điều ước, ước mơ và lời chúc Tết của mình thông qua hình thức
+        chuyển đổi số, góp phần lan tỏa năng lượng tích cực và tinh thần đoàn kết.
+      </p>
+
+      <a class="tet-btn"
+         href="https://forms.gle/QqVibsXuuZuHQhxh6"
+         target="_blank">
+         🎉 GỬI ĐIỀU ƯỚC SỐ 🎉
+      </a>
+    </div>
+
+    <!-- ALBUM TẾT -->
+    <div class="card">
+      <h3>📸 Album ảnh & video chúc Tết số</h3>
+      <p>
+        Album Tết số là nơi lưu giữ những khoảnh khắc đáng nhớ,
+        hình ảnh và video chúc Tết của tập thể lớp 10A7.
+        <br><br>
+        Việc số hóa kỷ niệm giúp bảo tồn giá trị tinh thần,
+        lan tỏa không khí Tết và thể hiện rõ tinh thần chuyển đổi số trong giáo dục.
+      </p>
+
+      <a class="tet-btn" href="#" target="_blank">
+        📂 XEM ALBUM TẾT
+      </a>
+      <p style="margin-top:10px;font-size:14px">
+        (QR Album ảnh / video được dán tại bảng tin STEM)
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- 5.4 GÓC TRƯNG BÀY -->
+<section>
+  <div class="container">
+    <h2>🔶 GÓC TRƯNG BÀY SẢN PHẨM STEM</h2>
+
+    <div class="card">
+      <h3>🌳 Sản phẩm: CÂY ĐIỀU ƯỚC SỐ</h3>
+      <p>
+        Cây Điều Ước Số là sản phẩm kết hợp giữa truyền thống và công nghệ.
+        <br><br>
+        <strong>Ý nghĩa văn hóa:</strong> Cây điều ước tượng trưng cho niềm tin,
+        hy vọng và những mong ước tốt đẹp trong năm mới.
+        <br><br>
+        <strong>Yếu tố công nghệ:</strong> Tích hợp mã QR dẫn tới website STEM,
+        form điều ước và album Tết số, giúp số hóa thông tin và tạo sự tương tác.
+      </p>
+    </div>
   </div>
 </section>
 
